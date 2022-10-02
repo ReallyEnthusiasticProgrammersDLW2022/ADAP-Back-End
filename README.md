@@ -1,12 +1,25 @@
 # Backend
 
-The backend is built using Flask and various machine learning libraries (eg. PyTorch and Tensorflow). To run the server locally, install [anaconda](https://www.anaconda.com/products/distribution) or [miniconda](https://docs.conda.io/en/latest/miniconda.html)
+The backend is built using Flask and various machine learning libraries (eg. PyTorch and Tensorflow). The server will be running on `http://localhost:8080` by default.
+
+## Running the Server (with conda)
+
+To run the server with conda, install [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html).
+
 
 ```bash
 conda env create -f environment.yaml
 conda activate DLW
 python3 main.py
 ```
-
-The server will be running on `http://localhost:8080` by default.
-
+## Running the server (with pip)
+```bash
+pip install -r requirements.txt
+```
+## Project Directories
+- `./data`: Data Sources required for our ML models
+- `./models`: ML Models and files (ANN, Google DeepLab v3+, MinMaxScaler)
+- `./scripts`: Miscellaneous scripts to run on our server
+- `constants.py`: Constants used within our server
+- `main.py`: Entry Point to our flask application
+- `processing.py`: Miscellaneous helper functions for processing purposes
