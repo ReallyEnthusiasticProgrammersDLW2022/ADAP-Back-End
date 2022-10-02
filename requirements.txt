@@ -1,0 +1,12 @@
+Pillow
+visdom
+flask
+opencv-python
+pandas
+tensorflow
+joblib
+scikit-learn==1.0.2
+gunicorn
+torch
+torchvision
+waitress

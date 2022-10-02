@@ -1,0 +1,17 @@
+name: DLW
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - pillow
+  - pytorch
+  - torchvision
+  - flask
+  - visdom
+  - opencv
+  - pandas
+  - tensorflow
+  - joblib
+  - scikit-learn=1.0.2
+  - gunicorn
+  - waitress
